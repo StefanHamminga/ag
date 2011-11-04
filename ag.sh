@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Play nice and don't fuck up my movie that is playing at the same time
 ionice -c 3 -p $$ > /dev/null
 renice -n 5 -p $$ > /dev/null
@@ -8,7 +7,7 @@ renice -n 5 -p $$ > /dev/null
 function usage {
 	echo -e "apt-get shortcuts\n"
 	echo "Usage:"
-	echo "$0 {u|i|a|ui|ua|d|r|p|s|v|c} [options]"
+	echo "$0 {u|i|a|ui|ua|d|t|r|p|s|v|c} [options]"
 	echo -e "\tu\tupdate"
 	echo -e "\ti\tinstall [packages]"
 	echo -e "\ta\tinstall -y --no-remove [packages]"

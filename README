@@ -1,1 +1,16 @@
-ag - An easy apt-get / dpkg frontend
+apt-get shortcuts
+
+Usage:
+/usr/bin/ag {u|i|a|ui|ua|d|t|r|p|s|v|c} [options]
+	u	update
+	i	install [packages]
+	a	install -y --no-remove [packages]
+	ui	update && install [packages]
+	ua	update && install -y --no-remove [packages]
+	d	update && dist-upgrade
+	t	simulate dist-upgrade
+	r	remove [packages]
+	p	remove --purge [packages]
+	s	search for [package regexp.]
+	v	Display version info for package(s)
+	c	autoremove && clean
