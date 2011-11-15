@@ -74,7 +74,7 @@ case "$1" in
 	apt-get -qq update && apt-get -qq --no-remove dist-upgrade && echo "Dist upgrade succesfull"
 	;;
 	"t")
-	apt-get -qq update && echo "The following packages would be upgraded:" && apt-get -s -qq --no-remove dist-upgrade | grep ^"Inst" | sed s/"^Inst "// | sort
+	echo "The following packages would be upgraded:" && apt-get -qq update && apt-get -s -qq --no-remove dist-upgrade | grep ^"Inst" | sed s/"^Inst "// | sort
 	;;
 	"r")
 	checkforroot
